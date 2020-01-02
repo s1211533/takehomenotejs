@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Photos</title>
+    </head>
+    <body>
+        <H2>Showing <%= photos.length %> document(s)</H2>
+        <ol>
+            <% for (i in photos) { %>
+                <li><a href=/display?_id=<%= photos[i]._id%>><%=photos[i].title%></a></li>
+            <% } %>
+        </ol>
+    </body>
+</html>
